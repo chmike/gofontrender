@@ -24,7 +24,7 @@ to test.
 To test the program with the given fonts file, the
 most simple is to clone the directory.
 
-`git clone ...`
+`git clone https://github.com/chmike/gofontrender.git`
 
 ## Usage
 
@@ -106,10 +106,12 @@ visible anti-aliasiog artifacts at low DPI because
 the pixels are too big in respect to the glyph size. 
 
 It is also possible to give a different gamma correction
-value. It has been reported [here]() that using a gamma 
-value of 1.43 could reduce the artifacts at the price of
-thickning the glyphs a bit. This is a simple hack that 
-gives good results with different fonts at low DPI (e.g 92).
+value. It has been reported 
+[here](https://www.puredevsoftware.com/blog/2019/01/22/sub-pixel-gamma-correct-font-rendering/) 
+that using a gamma value of 1.43 could reduce the artifacts 
+at the price of slightly thickning the glyphs. This is a 
+simple hack that gives good results with different fonts 
+at low DPI (e.g 92).
 
 The operation performed is to compute pow(gray, 1/gamma)
-without sRGB correction. 
+without sRGB correction applied of course. 
