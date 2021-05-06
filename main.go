@@ -29,7 +29,7 @@ var fontFlag = flag.String("ttf", "", "ttf font file to use (default: goregular)
 var textFlag = flag.String("text", "This is a test", "text to render")
 var ptFlag = flag.Float64("pt", 16, "pt size of font")
 var srgbFlag = flag.Bool("srgb", false, "use sRGB gamma correction")
-var gammaFlag = flag.Float64("gamma", 1., "correct for specified gamma value")
+var gammaFlag = flag.Float64("gamma", 1., "correction applied for specified gamma value")
 
 func main() {
 	flag.Parse()
