@@ -4,5 +4,5 @@ go 1.16
 
 require (
 	github.com/mandykoh/prism v0.35.1
-	golang.org/x/image v0.7.0
+	golang.org/x/image v0.10.0
 )
