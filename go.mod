@@ -1,9 +1,13 @@
 module github.com/chmike/gofontrender
 
-go 1.16
+go 1.25.0
+
+require (
+	github.com/mandykoh/prism v0.35.3
+	golang.org/x/image v0.38.0
+)
 
 require (
 	github.com/mandykoh/go-parallel v0.1.0 // indirect
-	github.com/mandykoh/prism v0.35.3
-	golang.org/x/image v0.24.0
+	golang.org/x/text v0.35.0 // indirect
 )
